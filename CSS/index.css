@@ -17,12 +17,32 @@ body {
   padding: 0px;
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* skip to main */
+.skip-to-main{
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 150px;
+  text-align: center;
+  z-index: 10;
+
+/* plassering */
+  opacity: 0.1;
+  position: fixed;
+   left: -300px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* header */
 header {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
   box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 1);
   padding-bottom: 0px;
   border-bottom: 1.5px solid #644a3e;
   font-family: Ubuntu;
+  z-index: 2;
+  position: sticky;
+  top: 0;
   /* grid oppdeling av header */
   /* ------------------------ */
   display: grid;
@@ -68,6 +88,8 @@ header h1:hover {
   color: #e6723a;
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* menyen */
 nav {
   font-size: 11px;
   font-family: Roboto;
@@ -93,12 +115,14 @@ nav a {
 nav a:hover {
   color: #e6723a;
   border-bottom: 1.5px solid #e6723a;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* main content boksen */
 .main-content {
   padding: 30px;
-  clear: both;
+  /* clear: both; */
   margin: auto;
   width: 60%;
   height: auto;
@@ -106,6 +130,8 @@ nav a:hover {
   box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 1);
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* banner area */
 .banner-area {
   font-family: Helvetica;
   color: #644a3e;
@@ -137,3 +163,57 @@ nav a:hover {
   transition: opacity .5s ease-in-out;
   opacity: 1;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* scrollebaren */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #696969;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* aside */
+.aside-header {
+  color: #644a3e;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+.aside-fixed {
+  font-family: ubuntu, sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 1);
+  padding: 15px;
+  clear: both;
+  position: absolute;
+  left: 83.59%;
+  top: 30%;
+  width: 13%;
+  position: sticky;
+  top: 1;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
