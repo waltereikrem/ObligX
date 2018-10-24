@@ -1,0 +1,14 @@
+&pws=0
+
+my key
+2f79bff81a2e2dab56b41ffb789bbb0d
+
+base
+api.openweathermap.org/data/2.5/forecast?id=524901&APPID=1111111111
+
+
+
+
+done:
+
+api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=2f79bff81a2e2dab56b41ffb789bbb0d

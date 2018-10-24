@@ -120,7 +120,7 @@ header nav a:hover {
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
 /* main content boksen */
 .main-content {
-  padding: 30px;
+  padding: 0px;
   /* clear: both; */
   margin: auto;
   width: 60%;
@@ -130,8 +130,9 @@ header nav a:hover {
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
-/* banner area */
+/* Intro */
 .banner-area {
+  border-top: solid 5px rgba(255, 255, 255, 0.9);
   font-family: Helvetica;
   color: #644a3e;
   font-variant: small-caps;
@@ -163,6 +164,10 @@ header nav a:hover {
   opacity: 1;
 }
 
+.text-felter{
+  width: inherit;
+  padding: 20px;
+}
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
 /* scrollebaren */
 /* width */
