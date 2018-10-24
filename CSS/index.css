@@ -35,7 +35,7 @@ body {
 /* header */
 header {
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 4px 18px -3px rgba(0, 0, 0, 0.82);
   padding-bottom: 0px;
   border-bottom: 2px solid #644a3e;
   font-family: Ubuntu;
@@ -45,7 +45,8 @@ header {
   /* grid oppdeling av header */
   /* ------------------------ */
   display: grid;
-  margin-bottom: -20rem; /*------------------gappet mellom header & main (krise løsning)-----*/
+  margin-bottom: -20rem;
+  /*------------------gappet mellom header & main (krise løsning)-----*/
   grid-template-columns: 5% 90% 5%;
   width: 100%;
   height: 100%;
@@ -126,7 +127,7 @@ header nav a:hover {
   width: 60%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.49);
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
@@ -160,16 +161,16 @@ header nav a:hover {
   padding: 35px;
   font-variant: normal;
 }
-.text-felter p{
+
+.text-felter p {
   font-size: 1em;
   color: #2b2b2b;
   margin-bottom: 1rem;
 }
 
-.text-felter h2{
+.text-felter h2 {
   font-size: 2em;
   margin-bottom: 1rem;
-
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
@@ -213,7 +214,7 @@ header nav a:hover {
 .aside-fixed {
   font-family: ubuntu, sans-serif;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.49);
   padding: 15px;
   clear: both;
   position: absolute;
@@ -238,11 +239,12 @@ header nav a:hover {
 
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
 /* footer */
-footer{
+footer {
   width: 100%;
   height: 10rem;
   background-color: rgba(255, 255, 255, 0.9);
   clear: both;
   margin-top: 10rem;
   border-top: 2px solid #644a3e;
+  box-shadow: 0px 16px 7px 22px rgba(0, 0, 0, 0.49);
 }
