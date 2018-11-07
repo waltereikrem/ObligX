@@ -2,14 +2,20 @@
 <html lang="nb" dir="ltr">
 
 <head>
+  <!-- meta tags for SEO -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#644a3e"/>
+  <meta name="description" content="Dette er en resurs-side for IT. Her finnes informasjon om CSS, SEO Universell utforming og nyttige tips for webutvikling og API bruk.">
+
   <title>Oblig X</title>
-  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/index.css"/S>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Ubuntu:300,400,500,700" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="CSS/walter.ico">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="JS/weather-api.js"></script>
 </head>
+
 
 <body>
   <div class="wrapper">
@@ -28,7 +34,16 @@
         <a href="#"></a>
       </nav>
       <!-- logo svg -->
-      <a href="index.html"><img class="logo" src="CSS/w.svg" alt="walter eikrem logo"></a>
+      <a href="index.html">
+        <object class="logo" type="image/svg+xml" data="CSS/w.svg">
+          <!-- fallback --> <img class="logo" src="CSS/logo.png" alt="walter eikrem logo">
+        </object>
+      </a>
+
+      <!-- feil jeg gjorde først. men lar forbli så jeg kan gå tilbake til den om jeg vill -->
+      <!-- <img class="logo" src="CSS/w.svg" alt="walter eikrem logo"> -->
+
+
       <h1>Walter Eikrem | Oblig X</h1>
     </header>
 
@@ -39,16 +54,12 @@
     <!-- Aside / Sidebar -->
     <aside class="aside-fixed">
       <img class="pixel-me" src="CSS/pixelartme.png" alt="pixel art av Walter">
-      <a href="#" class="aside-header">
-        <h3>Her er det noen morsomme prosjekter</h3>
-      </a>
-      <!--brukte h3 tag for å vise til tittelen semantisk men kan også evnt linke til studie Websted-->
+        <h3>3 andre morsomme egenskaper</h3>
 
       <nav class="aside-meny">
-        <a class="eks1" href="#"> Autoplay - Work-around </a><br>
-        <a class="eks2" href="#"> Link 2 </a><br>
-        <a class="eks3" href="#"> Link 3 </a><br>
-        <a class="eks4" href="#"> Link 4 </a><br>
+        <a class="eks1" href="http://itstud.hiof.no/~waltere/infProg2/oppgave4.html"> Autoplay - Work-around (ved klikk hvorsomhelst på siden) </a><br>
+        <a class="eks2" href="https://css-tricks.com/having-fun-with-link-hover-effects/"> CSS - link animasjon </a><br>
+        <a class="eks3" href="https://www.kode24.no/guider/effekten-fra-red-dead-redemption-2-i-css/70417369"> Red Dead </a><br>
       </nav>
 
     </aside>
@@ -82,16 +93,15 @@
 
 
         <section class="inputs">
-          <p class="api-p">Fyll inn By/sted under</p>
-          <input type="text" id="by-input" placeholder="By/sted">
+          <input type="text" id="by-input" placeholder="Fyll inn By/sted">
           <button type="button" class="soke-knapp" id="soke-knapp">SØK</button>
         </section>
 
 
 
         <section class="resultat">
-          <h2 id="sted"></h2>
-          <img src="blank.png" id="icon" class="icon" alt="Illustrasjon av søkeresultatets vær">
+          <h2 id="sted">SØK I FELTET OVER</h2>
+          <img src="js/apibilder/blank.png" id="icon" class="icon" alt=" ">
           <p class="weather" id="weather-typen"></p>
           <p class="temp" id="temp"></p>
           <p id="luftfukt"></p>
@@ -100,7 +110,6 @@
 
       </article>
       <!-- ///////////////////////////////////////////////////////////// -->
-
     </main>
 
     <footer>

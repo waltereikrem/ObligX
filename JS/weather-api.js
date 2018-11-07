@@ -16,7 +16,7 @@ function oppstart() {
         console.log(data) //så jeg kan dobbelt sjekke grenene og vite hva jeg skal skrive ut #500iq
 
         var by = data.name;
-        var icon = //icon linken              iconfilens navn       filtypen
+        var icon = //icon linken    iconfilens navn      filtypen
           "js/apibilder/" + data.weather[0].icon + ".png";
         var temp = data.main.temp;
         var weather = data.weather[0].main;
@@ -25,13 +25,11 @@ function oppstart() {
 
         document.getElementById("sted").innerHTML = by;
         $('.icon').attr('src', icon); // legger til "ikonet" som ble satt sammen i icon variablen
-        document.getElementById("temp").innerHTML ="<b> Tempratur: </b>" + temp + "&deg;C"; //kunne brukt Math.floor men foretrekker at den vise de 2 decimalene som hentes ut uansett
-        document.getElementById("weather-typen").innerHTML = "<b> Værtype: </b>" + weather;
+        $('.icon').attr('alt', "Illustrasjon av værsøket"); // legger til "alt tag" på vildet som blir vist frem
+        document.getElementById("temp").innerHTML ="<b> Tempratur: </b>" + " " + temp + "&deg;C"; //kunne brukt Math.floor men foretrekker at den vise de 2 decimalene som hentes ut uansett
+        document.getElementById("weather-typen").innerHTML = "<b> Værtype: </b>" + " " + weather;
         document.getElementById("luftfukt").innerHTML = "<b> Luftfuktighet: </b>" + luft + "%";
         document.getElementById("vindhast").innerHTML = "<b> Vind hastighet: </b>" + vind + "m/s";
-        
-
-
       }
     );
   }
