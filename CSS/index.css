@@ -307,7 +307,7 @@ footer {
 
 .soke-knapp {
   box-shadow: inset 1px 1px 3px 0px #b8a391;
-  background-color: #8c8075;
+  background-color: #644a3e;
   border-radius: 5px;
   border: 1px solid #696256;
   display: inline-block;
@@ -322,7 +322,7 @@ footer {
 }
 
 .soke-knapp:hover {
-  background-color: #7a726b;
+  background-color: #4d3930;
 }
 
 /* ------------------- */
