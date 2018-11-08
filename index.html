@@ -3,14 +3,19 @@
 
 <head>
   <!-- meta tags for SEO -->
+  <meta property="og:url" content="http://itstud.hiof.no/~waltere/obligx/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Resusjside for førstegang/nybegynner programmereren" />
+  <meta property="og:description" content="Her vill du finne informasjon om mitt oblig-X prosjekt, litt om CSS, bruk av en API til å finne været, og litt om html" />
+  <meta property="og:image" content="http://itstud.hiof.no/~waltere/obligx/css/banner-obligx.png" />
+  <meta name="twitter:card" content="summary" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#644a3e"/>
+  <meta name="theme-color" content="#644a3e" />
   <meta name="description" content="Dette er en resurs-side for IT. Her finnes informasjon om CSS, SEO Universell utforming og nyttige tips for webutvikling og API bruk.">
 
   <title>Oblig X</title>
-  <link rel="stylesheet" href="css/index.css"/S>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Ubuntu:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css"/S> <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Ubuntu:300,400,500,700" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="css/walter.ico">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/weather-api.js"></script>
@@ -26,8 +31,7 @@
       <!-- meny -->
       <nav class="meny">
         <a href="#apiFelt">Værmelding</a>
-        <a href="#">CSS</a>
-        <a href="#">Contact</a>
+        <a href="#kontakt-info">Kontakt</a>
         <a href="#Intro">Introduksjon</a>
       </nav>
       <!-- logo svg -->
@@ -36,10 +40,6 @@
           <!-- fallback --> <img class="logo" src="CSS/logo.png" alt="walter eikrem logo">
         </object>
       </a>
-
-      <!-- feil jeg gjorde først. men lar forbli så jeg kan gå tilbake til den om jeg vill -->
-      <!-- <img class="logo" src="CSS/w.svg" alt="walter eikrem logo"> -->
-
 
       <h1>Walter Eikrem | Oblig X</h1>
     </header>
@@ -51,12 +51,12 @@
     <!-- Aside / Sidebar -->
     <aside class="aside-fixed">
       <img class="pixel-me" src="css/pixelartme.png" alt="pixel art av Walter">
-        <h3>3 andre morsomme egenskaper</h3>
+      <h3>3 andre morsomme egenskaper</h3>
 
       <nav class="aside-meny">
-        <a class="eks1" href="http://itstud.hiof.no/~waltere/infProg2/oppgave4.html"> Autoplay - Work-around</a><br>
-        <a class="eks2" href="https://css-tricks.com/having-fun-with-link-hover-effects/"> CSS - link animasjon </a><br>
-        <a class="eks3" href="https://www.kode24.no/guider/effekten-fra-red-dead-redemption-2-i-css/70417369"> Red Dead Redemption Effekt</a><br>
+        <a href="http://itstud.hiof.no/~waltere/infProg2/oppgave4.html"> Autoplay - Work-around</a><br>
+        <a href="https://css-tricks.com/having-fun-with-link-hover-effects/"> CSS - link animasjon </a><br>
+        <a href="https://www.kode24.no/guider/effekten-fra-red-dead-redemption-2-i-css/70417369"> Red Dead Redemption Effekt</a><br>
       </nav>
 
     </aside>
@@ -71,7 +71,7 @@
         </section>
           <section class="text-felter">
             <h2> Introduksjon </h2>
-            <p>Velkommen til Walter Eikrem's Oblig X side. På denne siden vill du finne mange nyttige krep og triks, samt eksempler for deg som vill sette deg litt inn i webutvikling.</p>
+            <p>Velkommen til Walter Eikrem's Oblig X side. På denne siden vill du finne mange nyttige knep og triks, samt eksempler for deg som vill sette deg litt inn i webutvikling.</p>
             <p>Innholdet vill variere fra basis og litt mer avansert CSS (stilkode. eks. farger og utforming), til html (elementer/koden man setter stilen på. aka Innholdet). Alt som er i bruk på denne nettsiden vill bli forklart på en simpel og
               enkel måte. Det skal være lett å forstå selv for de som er helt nybegynnere. Jeg håper at det å nylig ha lært mye nytt selv ang webutvikling vill hjelpe på forklaringene, i motsettning til sider alá CSS Tricks. som ofte kan ha litt
               komplisert forklaring for helt ferske utviklere.</p>
@@ -91,12 +91,12 @@
 
         <!-- <section class="inputs"> -->
 
-          <form class="inputs" method="get">
+        <form class="inputs" method="get">
 
           <label class="label" for="by-input">Søkebar for sted (Engelsk gir best resultat). Kan oppleves treghet første gang man søker.</label>
           <input type="text" id="by-input" placeholder="Fyll inn By/sted">
           <button type="button" class="soke-knapp" id="soke-knapp">SØK</button>
-          </form>
+        </form>
 
 
         <!-- </section> -->
@@ -106,10 +106,12 @@
         <section class="resultat">
           <h2 id="sted">SØK I FELTET OVER</h2>
           <img src="js/apibilder/blank.png" id="icon" class="icon" alt=" ">
+
           <p class="weather" id="weather-typen"></p>
           <p class="temp" id="temp"></p>
           <p id="luftfukt"></p>
           <p id="vindhast"></p>
+
         </section>
 
       </article>
@@ -117,7 +119,19 @@
     </main>
 
     <footer>
-      <p></p>
+      <article id="contact">
+        <h2>Kontakt Informasjon</h3>
+
+        <section id="kontakt-info">
+          <p id="epost">E-post: waltere@hiof.no</p>
+
+          <!-- follow button for twitter -->
+          <a href="https://twitter.com/slopeizCS?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @slopeizCS</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+
+        <p id="copyright">Oblg X - Walter Eikrem &copy 2018</p>
+      </article>
+
     </footer>
   </div>
 </body>
