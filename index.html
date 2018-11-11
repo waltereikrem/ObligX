@@ -6,13 +6,13 @@
   <meta property="og:url" content="http://itstud.hiof.no/~waltere/obligx/" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Resusjside for førstegang/nybegynner programmereren" />
-  <meta property="og:description" content="Her vill du finne informasjon om mitt oblig-X prosjekt, litt om CSS, bruk av en API til å finne været, og litt om html" />
+  <meta property="og:description" content="Her vill du finne informasjon om mitt oblig-X prosjekt, samt bruk av en API til å finne været!" />
   <meta property="og:image" content="http://itstud.hiof.no/~waltere/obligx/css/banner-obligx.png" />
   <meta name="twitter:card" content="summary" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#644a3e" />
-  <meta name="description" content="Dette er en resurs-side for IT. Her finnes informasjon om CSS, SEO Universell utforming og nyttige tips for webutvikling og API bruk.">
+  <meta name="description" content="Dette er en Resusjside. Siden er ment som et eksempel, både for SEO men også en enkel måte å jobbe med et API.">
 
   <title>Oblig X</title>
   <link rel="stylesheet" href="css/index.css"/S> <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Ubuntu:300,400,500,700" rel="stylesheet">
@@ -33,6 +33,7 @@
         <a href="#apiFelt">Værmelding</a>
         <a href="#kontakt-info">Kontakt</a>
         <a href="#Intro">Introduksjon</a>
+        <a href="#rapport">Rapport</a>
       </nav>
       <!-- logo svg -->
       <a href="index.html">
@@ -43,10 +44,6 @@
 
       <h1>Walter Eikrem | Oblig X</h1>
     </header>
-
-    <div class="skip-to-main">
-      <a href="#mainContent">Skip to main-content</a>
-    </div>
 
     <!-- Aside / Sidebar -->
     <aside class="aside-fixed">
@@ -69,15 +66,90 @@
         <section>
           <img src="css/banner-obligx.png" alt="velkommen banner">
         </section>
-          <section class="text-felter">
-            <h2> Introduksjon </h2>
-            <p>Velkommen til Walter Eikrem's Oblig X side. På denne siden vill du finne mange nyttige knep og triks, samt eksempler for deg som vill sette deg litt inn i webutvikling.</p>
-            <p>Innholdet vill variere fra basis og litt mer avansert CSS (stilkode. eks. farger og utforming), til html (elementer/koden man setter stilen på. aka Innholdet). Alt som er i bruk på denne nettsiden vill bli forklart på en simpel og
-              enkel måte. Det skal være lett å forstå selv for de som er helt nybegynnere. Jeg håper at det å nylig ha lært mye nytt selv ang webutvikling vill hjelpe på forklaringene, i motsettning til sider alá CSS Tricks. som ofte kan ha litt
-              komplisert forklaring for helt ferske utviklere.</p>
-            <p>Om det er noe du som nybegynner lurer på som kanskje ble forklart litt komplisert kan du sende mail til meg på waltere@hiof.no</p>
-            <p>Skal prøve å få svart så sant jeg ikke blir spammet ned...kappa.</p>
-          </section>
+        <section class="text-felter">
+          <h2> Introduksjon </h2>
+          <p>Velkommen til Walter Eikrem's Oblig X side. På denne siden vill du finne mange nyttige knep og triks, samt eksempler for deg som vill sette deg litt inn i webutvikling.</p>
+          <p>Denne siden er ment som noe mer enn bare et svar på en skole oppgave, men også som et eksempel. Eksempel på hvordan å gjøre SEO, og til å vise frem kule ting man kan gjøre med webutvikling og koding.
+            Her Vill du finne bruk av en nokså enkel API, og litt fler artige ting man kan gjøre med CSS.
+            La musepekeren varde litt rundt over diverse ting og du vill se stilige effekter man kan oppnå med bruk av css blandt annet. jeg håper du som leser ser noe du liker og blir inspirert av, og jeg ser på siden her som fullstendig
+            "Open-source" så husk.
+            STEALING = LEARNING.</p>
+          <p>
+            Trykk f12 får å se koden min og så om det er noe du har bruk for, eller ctrl + U for å se hele kilde koden på en gang.
+          </p>
+          <p>Om det er noe du som nybegynner lurer på som kanskje ble forklart litt komplisert i koden til siden kan du sende mail til meg på waltere@hiof.no</p>
+          <p id="rapport">Skal prøve å få svart så sant jeg ikke blir spammet helt ned...kappa</p>
+        </section>
+      </article>
+
+      <!-- ///////////////////////////////////////////////////////////// -->
+
+      <article class="rapport">
+        <section class="text-felter">
+          <h2>Proskjekt Rapport for Oblig-X</h2>
+          <p>
+            Velkommen til min Oblig X oppgave. I denne oppgaven skulle vi jobbe med en API som vi valgte selv, og utnytte data vi får fra API’et til å kunne vise frem dataen på en nyttig og fornuftig måte.
+            Selv valgte jeg oppgaven for å kunne jobbe med noe mer målrettet og kreativt.
+            Så API’et jeg valgte var Openweathermap’s API.
+          </p>
+          <p>
+            Jeg valgte Openweathermap ettersom de har en veldig bra dokumentert API, klare guider ang bruk på nettsiden dems, og de hadde et veldig ryddig og fint json script hvor man kunne henta data ut fra.
+          </p>
+
+
+
+          <h3>Planlegging</h3>  <!--her ga jeg opp å splitte teksten for at koden skulle se ekstra pen ut. sorry michael :P-->
+          <p>
+            Jeg startet med å planlegge layout på siden min. Planen var å få til noe litt minimalistisk stilmessig, men også ikke altfor klisjé. Jeg gikk for å ha alt i én html fil, slik at menyen min ville navigere opp, og ned på siden. I motsetning til en meny som tar deg til andre html filer. Det ville si at jeg kunne lage en "main content" som har "height" satt til auto. Slik at jo mer data jeg plasserte i nne på siden ville hoveddelen bare tilpasse seg nedover siden. Jeg ville også helt klart ha en aside. Jeg var ikke helt sikker på hva jeg skulle ha som innhold på i asiden, men jeg endte med å linke til blannt annet en oppgave jeg gjorde som snek seg rundt det at autoplay blir skrudd av i de fleste nettlesere. Det gjorde jeg med en simpelt javascript som spiller av musikken når en bruker klikker et sted på siden. Det vill si at om man har en link til den oppgaven via et annet sted, vill musikken spille når man besøker siden. Som ved alt annet innen kode, er det ikke alltid det fungerer. Men det gjør jobben ganske greit.
+          </p>
+
+
+          <p>
+            Jeg ville ha menyen min inne i headeren, og over tittelen i headeren med logoen min til venstre i headeren. Jeg lagde men logoen i SVG form og fant ut at grid ville være best for headeren.
+          </p>
+
+          <p>
+            Jeg vurderte å gridde hele siden, men problemet da ville være hvor "stiv" hele siden ville bli. Derfor tok jeg heller å brukte margin auto på "main content" for å sentrere selve innholdet på siden. Resten kan da enkelt stilleres og ville gjøre media queries mye lettere å jobbe med senere, nå som alle elementer var litt mer fri.
+          </p>
+
+
+          <h3>Bruk av API</h3>
+          <p>
+            Ettersom både jeg og en venn av meg valgte samme API, hjalp vi hverandre med å finne gode løsninger å jobbe ut ifra. Det var nok av YouTube tutorials for hvordan å bruke selve API’et. Problemet var hvor simpelt og kjedelig mange valgte å gjøre det. Så vi endte med en tutorial fra CodeTrain på YouTube. Der var viste hvordan man kan dele opp linken i variabler i javascriptet. Og kunne la brukerens input fylle ut linken. På den måten ville linken ha stedet brukeren fyller inn og vise frem riktig resultat.
+          </p>
+
+          <p>
+            API’et var ikke uten bugs fant vi fort ut. Selv om det var mulig å søke opp; Moon, Mars, Earth, North Pole osv. Var det ikke mulig å søke på Bergen. Noe vi fant litt rart ettersom vi så på selve kartet de har å vie til på sin egen side, at Bergen og data på Bergen var å finne der. Men så ved en tilfeldighet viste det seg at man kan få info på Bergen vet å legge til et mellomrom etter bynavnet.
+          </p>
+
+          <p>
+            Det jeg valgte å ha som data å vise frem var en illustrasjon av været, Værtypen (overskyet, yr osv osv), Temperatur så klart, luftfuktighet og vindhastighet. Jeg følte det er det de fleste er interessert i. jeg tok også å la inn en consol.log av selve json scriptet. Mest så jeg kunne se hvilken array verdiene mine lå, men også så en nyskjerrig utvikler kan ta en titt og se også. Så klart, om dette var noe mer enn en skole oppgave ville jeg nok ikke hatt scriptet synlig slik at alle kan se api nøkkel osv. men jeg så ikke noe i oppgave teksten om at det var noe vi skulle styre med, så jeg lot det være.
+          </p>
+
+          <p>
+            Alt i alt var egentlig API’et en drøm å jobbe med, alt gikk veldig fint. Noe vi ble enige om, var at ikonene de tilbyr fra openweathermap var veldig små. Logisk nok ettersom det er ment som ikoner. Siden vi egentlig var ute etter illustrasjoner så satte jeg meg ned å laget egne litt større "ikoner".
+          </p>
+
+          <p>
+            Etter typ 20 min var alle ikonene laget. Da lærte jeg også det at det er egne verdikoder for hver type. Ikke bare etter vær, men også ettersom det er natt eller dag. Derfor måtte bildene ha samme navn som verdien, og ved hjelp av javascriptet brukte vi verdikoden og en + ".jpg" til å bli kilden til bildet.
+          </p>
+
+
+          <h3>Hva fikk jeg ut av oppgaven?</h3>
+          <p>
+            Det har vert utrolig deilig å slippe alle de tett i tett små oppgave som bare ville blitt slurvet til minimumskravene. Med denne oppgaven får jeg vist hva jeg kan, hva jeg har lært og mer av min egen design stil. Derfor var det ingen tvil for min del at jeg ville ta denne oppgaven selv om den var litt mer utfordrende en de andre. Det er også en mer realistisk webutviklings oppgave i mine øyne. Vi fikk en liste med klare instrukser og satt i gang og jobber mot dem.
+          </p>
+
+          <p>
+            Jeg føler virkelig at jeg nå kunne klart å lage en veldig bra optimalisert nettside for enkelte kunder. Klart ikke noe altfor avansert utenom hva jeg viser her. Men denne oppgaven har absolutt fått åpnet øynene mine for hvordan webutviklig er. I fremtiden er det helt klart noe jeg ville ha likt å jobbe med. Jeg har på fritiden i rundt 5 år tatt på meg logo design oppdrag. Så det å kunne tilpasse resultat etter hva en kunde ønsker er noe jeg har vært borte i før. Jeg har også satt meg mer inn i hva som er best for et prosjekt ang flex, grid eller float. Jeg hadde en enkel jobb med redigering ettersom ikke hele siden er strikt grid eller flex. Men heller litt av alt.
+          </p>
+
+          <p>
+            ja, btw. Om du lurer på hva logoene på siden er, så er det Gamer-taggen min sl0peiz, min personlig logo som beståt av en "W" og en "E", og Logoen til Ragnarok Esports. Som er en esports-organisasjon jeg spiller Counter-Strike: Global Offensive under.
+          </p>
+
+        </section>
+
       </article>
 
       <!-- ///////////////////////////////////////////////////////////// -->
@@ -122,14 +194,15 @@
       <article id="contact">
         <h2>Kontakt Informasjon</h3>
 
-        <section id="kontakt-info">
-          <p id="epost">E-post: waltere@hiof.no</p>
+          <section id="kontakt-info">
+            <p id="epost">E-post: waltere@hiof.no</p>
 
-          <!-- follow button for twitter -->
-          <a href="https://twitter.com/slopeizCS?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @slopeizCS</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </section>
+            <!-- follow button for twitter -->
+            <a href="https://twitter.com/slopeizCS?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @slopeizCS</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </section>
 
-        <p id="copyright">Oblg X - Walter Eikrem &copy 2018</p>
+          <p id="copyright">Oblg X - Walter Eikrem &copy 2018</p>
       </article>
 
     </footer>
